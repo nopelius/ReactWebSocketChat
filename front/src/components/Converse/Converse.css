@@ -1,0 +1,24 @@
+.converse-container {
+    display: grid;
+    max-height: 100 vw;
+    max-width: 100 vw;
+    grid-template-areas:
+        'header header header header'
+        'messages messages messages logins'
+}
+
+.titleStyle {
+    padding: 10px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+}
+
+.inputFields {
+    padding: 10px;
+    margin: 5px;
+}
+
+.item1 { grid-area: header; border: solid; }
+.item2 { grid-area: messages; max-height: 26vw; height: 26vw; width: 50vw; overflow: scroll; padding: 1vw; border: solid; }
+.item3 { grid-area: logins; padding: 2vw; max-height: 20vw; height: 20vw; overflow: scroll; }
